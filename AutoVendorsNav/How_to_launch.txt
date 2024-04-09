@@ -1,0 +1,14 @@
+launch kobuki node with custom launch 
+launch cameras with custom launch good
+launch move base with launch
+launch map server from command line 
+launch goal/website node
+
+roslaunch kobuki_node kobukiVendor.launch
+roslaunch realsense2_camera rs_autovendors.launch
+rosrun map_server map_server /home/turtlebot/Documents/gazeboMaps/BetterMap.yaml
+roslaunch move_base move_base.launch
+roslaunch depthimage_to_laserscan autovendors.launch
+/home/turtlebot/Documents/talker.py
+
+also need to launch rosserial and rosbridge (notes on trello card)
